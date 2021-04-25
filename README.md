@@ -2,8 +2,6 @@
 
 Command-Line Application that accepts user input.
 
-# **Professional-README-Generator**
-
 MIT<br>[![Badge here](https://img.shields.io/badge/license-${license}-blue)](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
@@ -36,6 +34,12 @@ This Node.js application can be used by developers who would like to save time b
 - This is an example of prompts when the application is started:
   ![Answered Questions](/assets/images/answeredquestions.PNG "Answered Questions")
 
+  - Once all questions are completed an alert is displayed.
+    ![Alert](/assets/images/answeredquestions.PNG "Alert")
+
+  - This is an example of the written file once the program is completed.
+    ![Completed File](/assets/images/readmefile.PNG "Completed File")
+
 ## License
 
 I have used the MIT license for this application
@@ -47,4 +51,10 @@ This can be manually tested.
 
 ## Tests
 
+This application can be tested manually.
+
 ## Questions
+
+Please contact me by e-mail: andre.lucas284@gmail.com
+
+Pleas follow me on Github: https://github.com/polodre
