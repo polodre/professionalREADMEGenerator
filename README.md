@@ -34,7 +34,7 @@ This Node.js application can be used by developers who would like to save time b
 ---
 
 - This is an example of prompts when the application is started:
-  [![Answered Questions](/assets/images/answeredquestions.PNG "Answered Questions")]
+  ![Answered Questions](/assets/images/answeredquestions.PNG "Answered Questions")
 
 ## License
 
