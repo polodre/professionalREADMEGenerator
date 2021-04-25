@@ -6,7 +6,7 @@ Apache-2.0<br>[![License](https://img.shields.io/badge/License-Apache%202.0-blue
 
 ## Description
 
-command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package]
+command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
 
 ## Table of contents
 
@@ -42,8 +42,8 @@ This Node.js application can be used by developers who would like to save time b
 
 ## License
 
-I have used the MIT license for this application
-https://camo.githubusercontent.com/2bb630e2707a04100cd270fd944d22816241c37b68a5a1629257920c65e17891/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d626c7565
+I have used the Apache-2.0 license for this application
+https://opensource.org/licenses/Apache-2.0
 
 ## Contributing
 
@@ -58,3 +58,7 @@ This application can be tested manually.
 Please contact me by e-mail: andre.lucas284@gmail.com
 
 Pleas follow me on Github: https://github.com/polodre
+
+## Link to video demonstrating the app:
+
+https://vimeo.com/541194484/5b462a37a7
