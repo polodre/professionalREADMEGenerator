@@ -4,7 +4,7 @@ Command-Line Application that accepts user input.
 
 # **Professional-README-Generator**---
 
-MIT<br>[![Badge here](https://img.shields.io/badge/license-${license}-blue)](https://img.shields.io/badge/license-MIT-blue)
+MIT<br>[`![Badge here](https://img.shields.io/badge/license-${license}-blue)`](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
 
