@@ -4,7 +4,7 @@ Command-Line Application that accepts user input.
 
 # **Professional-README-Generator**---
 
-MIT<br>[![License: MIT](https://img.shields.io/badge/license-${license}-blue)](https://img.shields.io/badge/license-MIT-blue)
+MIT<br>[![Badge here](https://img.shields.io/badge/license-${license}-blue)](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
 
@@ -12,7 +12,7 @@ command-line application that dynamically generates a professional README.md fil
 
 ## Table of contents
 
-- [Professional-Readme-Generator])(#professional-readme-generator)
+- [Professional-Readme-Generator](#professional-readme-generator)
 - [Description](#description)
 - [Table-of-contents](#table-of-contents)
 - [Installation](#installation)
