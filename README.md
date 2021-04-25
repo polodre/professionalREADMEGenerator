@@ -2,7 +2,7 @@
 
 Command-Line Application that accepts user input.
 
-MIT<br>[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/MIT)
+Apache-2.0<br>[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
 
