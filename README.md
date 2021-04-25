@@ -1,10 +1,10 @@
-# Professional-README-Generator---
+# Professional-README-Generator
 
 Command-Line Application that accepts user input.
 
-# **Professional-README-Generator**---
+# **Professional-README-Generator**
 
-MIT<br>[`![Badge here](https://img.shields.io/badge/license-${license}-blue)`](https://img.shields.io/badge/license-MIT-blue)
+MIT<br>[![Badge here](https://img.shields.io/badge/license-${license}-blue)](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
 
@@ -31,6 +31,11 @@ Run 'npm install inquirer' and 'npm install util' before executing 'node index.j
 
 This Node.js application can be used by developers who would like to save time by generating a professional README baseline that complies with the most used guidelines on creating .md files. A command line prompt guides the user thru a series of questions which auto populate the README.md file once all the questions of the prompt are answered.
 
+---
+
+- This is an example of prompts when the application is started:
+  [ApplicationStatingImg](assets/images/answeredquestions.PNG)
+
 ## License
 
 I have used the MIT license for this application
@@ -38,14 +43,8 @@ https://camo.githubusercontent.com/2bb630e2707a04100cd270fd944d22816241c37b68a5a
 
 ## Contributing
 
----
-
 This can be manually tested.
 
 ## Tests
 
----
-
 ## Questions
-
----
