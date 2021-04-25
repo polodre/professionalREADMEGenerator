@@ -42,8 +42,9 @@ This Node.js application can be used by developers who would like to save time b
 
 ## License
 
-- I have used the Apache-2.0 license for this application
-  https://opensource.org/licenses/Apache-2.0
+I have used the Apache-2.0 license for this application
+
+- https://opensource.org/licenses/Apache-2.0
 
 ## Contributing
 
