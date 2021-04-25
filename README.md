@@ -2,7 +2,7 @@
 
 Command-Line Application that accepts user input.
 
-MIT<br>[![Badge here](https://img.shields.io/badge/license-${license}-blue)](https://img.shields.io/badge/license-MIT-blue)
+MIT<br>[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
 
@@ -34,11 +34,11 @@ This Node.js application can be used by developers who would like to save time b
 - This is an example of prompts when the application is started:
   ![Answered Questions](/assets/images/answeredquestions.PNG "Answered Questions")
 
-  - Once all questions are completed an alert is displayed.
-    ![Alert](/assets/images/answeredquestions.PNG "Alert")
+- Once all questions are completed an alert is displayed.
+  ![Alert](/assets/images/answeredquestions.PNG "Alert")
 
-  - This is an example of the written file once the program is completed.
-    ![Completed File](/assets/images/readmefile.PNG "Completed File")
+- This is an example of the written file once the program is completed.
+  ![Completed File](/assets/images/readmefile.PNG "Completed File")
 
 ## License
 
