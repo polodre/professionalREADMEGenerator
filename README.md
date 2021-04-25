@@ -47,7 +47,7 @@ https://opensource.org/licenses/Apache-2.0
 
 ## Contributing
 
-This can be manually tested.
+Other developers can contribute to this app.
 
 ## Tests
 
