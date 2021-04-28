@@ -1,83 +1,117 @@
-// when prompted, generate README
-// include Title, Description, ToC, installation, usage, license, contributing, tests, questions
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
+const writeFileAsync = util.promisify(fs.writeFile);
 
-// license will have choices
-// if license add badge
+function promptUser() {
+    
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "project_title",
+            message: "What is the title of your project?",
+          },
+          {
+            type: "input",
+            name: "description",
+            message: "What is your description?",
+          },
+          {
+            type: "input",
+            name: "use",
+            message: "How would you use this application?",
+          },
+          {
+            type: "list",
+            name: "license",
+            choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
+          },
+          {
+            type: "input",
+            name: "contributors",
+            message: "Who can contribute to the application?"
+          },
+          {
+            type: 'input',
+            message: 'How would you test the application?',
+              name: 'tests',
+              default: 'npm test'
+          },
+          {
+            type: 'input',
+            message: 'Who would you contact if you have questions?',
+              name: 'questions',
+              
+          }
+        ]);
+      }
 
-// questions need github username, link, email
+function generateREADME(data) {
+  return `  
+  
+  ## Table of Contents
+  - [Professional-Readme-Generator](#professional-readme-generator)
+  - [Description](#description)
+  - [Table-of-contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-// ToC needs link to section in README
+## Title of project
+${data.project_title}
+
+## Project Description
+${data.description}
+
+## Description
+${data.description}
+
+## Usage Information
+${data.use}
+
+- This is an example of prompts when the application is started:
+  ![Answered Questions](/assets/images/beforethealert.PNG "Answered Questions")
+
+- Once all questions are completed an alert is displayed.
+  ![Alert](/assets/images/newquestionsanswered.PNG "Alert")
+
+- This is an example of the written file once the program is completed.
+  ![Completed File](/assets/images/sample.PNG "Completed File")
 
 
-// TODO: Include packages needed for this application
-var inquirer = require('inquirer');
-const fs = require('fs');
-var generateMarkdown = require('./utils/generateMarkdown')
-// TODO: Create an array of questions for user input
-const questions = [];
+## License
+${data.license}
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {    
-    fs.writeFile(fileName, data, (err) =>
-    err ? console.error(err) : console.log('Success!')
-    )
+## Contributers
+${data.contributors}
+
+## Tests
+
+${data.tests}
+
+
+## Questions
+${data.questions}
+
+## Link to video demonstrating the app:
+
+Please follow me on Github: https://github.com/polodre`;
+  
 }
 
-// TODO: Create a function to initialize app
-function init() {
-    inquirer
-        .prompt([
-            {
-                type: 'input',
-                message: 'What is the title of your project?',
-                name: 'title',
-            },
-            {
-              type: 'input',
-              message: 'What is your description?',
-              name: 'description',
-            },
-            {
-              type: 'input',
-              message: 'How would you install your dependencies?',
-                name: 'install',
-              default: 'npm install',
-            },
-            {
-              type: 'input',
-              message: 'How would you use this application?',
-                name: 'usage',
-            },
-            {
-              type: 'list',
-              message: 'Choose a license',
-                name: 'license',
-                choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
-            },
-            {
-              type: 'input',
-              message: 'Who can contribute to the application?',
-                name: 'contributers',
-            },
-            {
-              type: 'input',
-              message: 'How would you test the application?',
-                name: 'tests',
-                default: 'npm test'
-            },
-            {
-              type: 'input',
-              message: 'Who would you contact if you have questions?',
-                name: 'questions',
-                
-            }
-            
-        ])
-        .then((response) => {
-            //console.log(response);
-            writeToFile("README.md", generateMarkdown(response))
-        })
-}
+promptUser()
+  .then(function(data) {
+    const readme = generateREADME(data);
 
-// Function call to initialize app
-init();
+ 
+    return writeFileAsync("README.md", readme);
+  })
+  .then(function() {
+    console.log('✔️  Successfully wrote to README.md');
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
