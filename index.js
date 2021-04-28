@@ -48,7 +48,9 @@ function promptUser() {
 
 function generateREADME(data) {
   return `  
-  
+  ## Title of project
+  ${data.project_title}
+
   ## Table of Contents
   - [Professional-Readme-Generator](#professional-readme-generator)
   - [Description](#description)
@@ -59,9 +61,6 @@ function generateREADME(data) {
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
-
-## Title of project
-${data.project_title}
 
 ## Project Description
 ${data.description}
@@ -97,8 +96,18 @@ ${data.tests}
 ${data.questions}
 
 ## Link to video demonstrating the app:
+https://vimeo.com/542459918/2e17987741
 
-Please follow me on Github: https://github.com/polodre`;
+## Link to GitHub Repo:
+https://github.com/polodre/professionalREADMEGenerator#readme
+
+## Link to GitHub pages:
+https://polodre.github.io/professionalREADMEGenerator/
+
+Please follow me on Github:
+https://github.com/polodre
+
+`;
   
 }
 
